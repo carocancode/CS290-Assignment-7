@@ -1,0 +1,247 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+          /* Add fonts from the app's server 
+@font-face {                
+  font-family: 'FontName';
+  src: url('FontName.woff2') format('woff2');
+} 
+          */                           
+
+          
+          @import url(https://fonts.googleapis.com/css2?family=Francois+One&family=Playfair+Display&display=swap);
+          
+
+          @import '../node_modules/modern-normalize/modern-normalize.css';
+          /* npm install modern-normalize 
+            Resets elements for browser consistancy.  
+            http://nicolasgallagher.com/about-normalize-css/ 
+          */
+
+          /* Component-specific stylesheets, if any 
+@import "component1.css";   
+          */
+
+/*   ----- Variables  ----- 
+
+:root {
+  --custom-color-name:;
+  --custom-embellishment-name:;
+}*/
+
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {       /* Can alternatively define in html {} or :root {} */
+  color: rgb(7, 1, 18);
+  background-color: rgb(232, 238, 232);
+  font-family:  'Playfair Display', serif;
+  font-size:16px;
+  margin: auto;
+  width: 50%;
+  border: 3px solid rgb(93, 188, 93);
+  padding: 10px;
+  }
+
+
+  navigation {
+    text-align: center; 
+    background-color: #10810e;
+    border: 2px solid rgba(2, 8, 34, 0.432);
+    font-family:  'Playfair Display', serif;
+    float: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    }
+    
+  
+    nav a:hover {color: rgb(0, 99, 53);
+  }
+
+
+
+   
+  router {
+    text-align: center;
+  }
+
+  route {
+    text-align: center;
+     
+  }
+  h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+    font-size: 45px;
+    color:rgb(138, 138, 151);
+    
+    
+  }
+  h2 {
+    text-align: center;
+    color:rgb(117, 132, 121)
+  }
+  
+  label {
+    text-align:left;
+    float:left;
+    width:30%; 
+   }
+   
+   input {
+     text-align:left;
+     padding:1%;
+     width:67%; 
+   }
+
+   table {
+    border: 3px solid rgb(21, 150, 167);
+    padding: 40px;
+    font-size:20px;
+    margin:10px auto;
+    letter-spacing: normal;
+    text-align: center;
+    border-collapse: collapse;
+    color:rgb(3, 72, 8);
+    text-align: center;
+    background-color: #708a7a;
+    text-align: left;
+  
+  }
+  caption {
+    text-align: center;
+    margin: 20px auto;
+    color:rgb(166, 172, 194);
+    font-size: 25px;
+  }
+  thead {
+    text-align: center;
+    
+  }
+  
+  
+    
+  th {
+    height: 70px;
+    color: rgb(15, 3, 5);
+    font-family: 'Playfair Display', serif;
+    word-spacing: 10px;
+   
+  }
+  td {
+    text-align: center;
+    color: rgb(3, 56, 2);
+    font-family: 'Playfair Display', serif;
+  }
+   
+
+  form {
+    color:rgb(2, 9, 19);
+  
+  }
+  fieldset {
+    border-color: rgba(20, 186, 159, 0.908);
+    border: 4px solid;
+  }
+   legend{
+  
+    border: 2px solid rgb(6, 137, 87);
+    border-radius: 4px;
+    margin: 10px auto;
+  }
+  
+   button {
+    background-color: rgb(123, 187, 134); 
+    color: rgb(77, 66, 166); 
+    border: 2px solid #4CAF50;
+    border-radius: 25px;
+    margin: 10px auto;
+    font-family: 'Playfair Display', serif;
+  }
+
+   link {
+    text-align: center;
+    margin: 5px auto;
+   }
+
+   header, footer {
+    margin: 5px auto;
+    padding: 5px;
+    color:rgb(1, 6, 7);
+    background-color: rgb(16, 77, 10);
+   }
+
+
+   cite{
+    font-size: 20px;
+    color:#c7c9db;
+  }
+  main {
+      text-align: center;
+    }
+  
+  .App{
+    background-color: #3c660d;
+    border: rgba(25, 25, 24, 0.596);
+  }
+  
+  
+
+  
+  .App-nav{
+    padding: 10px;
+    font-size:25px;
+    margin:5px;
+    letter-spacing: normal;
+  
+}
+ 
+  
+  
+  .App-header{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+   padding: 10px;
+  
+  }
+  
+  
+  .App-article {
+    text-align: center;
+  }
+  
+  a {color: rgba(140, 0, 255, 0.685);}
+  a:link {color: rgb(15, 95, 100);}
+  a:hover {color: purple;}
+  a:active {color: rgb(255, 0, 149);}
+  a:visited {color: rgb(6, 218, 17);}
+
+  p {
+    text-align: center;
+    font-size: 15px;
+    color:rgb(14, 138, 70);
+  }
+
+
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
+
+
+
